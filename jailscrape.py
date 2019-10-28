@@ -25,4 +25,4 @@ for row in rows:
     #This line creates a term called "cell" to dump data into pulled from the rows of data on the website, then has python pull that data (called "td" in HTML)
 
     data = []
-    for cell in cells:
+

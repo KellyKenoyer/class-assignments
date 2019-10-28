@@ -26,8 +26,3 @@ for row in rows:
 
     data = []
     for cell in cells:
-        data.append(cell.text.encode('utf-8'))
-
-#These lines encode the contents of each cell as "utf-8"
-    writer.writerow(data)}
-    #This line write the rows of data

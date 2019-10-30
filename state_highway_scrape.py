@@ -18,7 +18,18 @@ html = r.text
 
 soup = BeautifulSoup(html, "html.parser")
 
-print(soup)
+table = soup.find('table', {'class': 'accidentOutput'})
+
+rows = table.find_all('tr')
+
+#######
+
+for row in rows:
+	cells = row.find_all('td')
+	data = []
+for cell in cells:
+	data.append(cell.text)
+
 
 
 
